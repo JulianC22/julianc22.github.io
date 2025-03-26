@@ -3,34 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot de Soporte al Cliente - Compra de Ropa</title>
+  <title>Space Invaders</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Contenedor del Chatbot -->
-  <div id="chat-container">
-    <div id="chat-box">
-      <div id="messages">
-        <div class="message bot-message">¡Hola! Soy el asistente de compras. ¿En qué puedo ayudarte hoy?</div>
-      </div>
-    </div>
-    <input type="text" id="user-input" placeholder="Escribe tu mensaje..." />
-    <button id="send-btn">Enviar</button>
-  </div>
-
-  <!-- Modal de Pago -->
-  <div id="payment-modal" class="hidden">
-    <div id="payment-modal-content">
-      <h2>Pago de Pedido</h2>
-      <p>Por favor, ingresa los detalles de tu pago:</p>
-      <input type="text" id="credit-card" placeholder="Número de tarjeta" />
-      <input type="text" id="expiration" placeholder="Fecha de expiración (MM/AA)" />
-      <input type="text" id="cvv" placeholder="CVV" />
-      <button id="process-payment">Procesar Pago</button>
-      <button id="close-payment-modal">Cerrar</button>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div id="game-over" class="hidden">
+      <h1>Game Over</h1>
+      <p>Puntaje: <span id="final-score"></span></p>
+      <button id="restartButton">Reiniciar</button>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
+
